@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    background-image:url(/img/tile.jpg);
+    font-family: 'Kalam', cursive;
+    font-family: 'Solitreo', cursive;
+    height: 100px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main{
+    text-align: center;
+    background-image:url(/img/formbg.jpg);
+    padding: 30px;
+    margin: 15px,15px;
+}
+.taskName {
+    width: 130px;
+    height: 30px;
+}
+.taskDate {
+    width: 130px;
+    height: 30px;
+}
+.taskTime {
+    width: 130px;
+    height: 30px;
+}
+.submit {
+    width: 130px;
+    height: 30px;
+}
+.resent {
+    width: 130px;
+    height: 30px;
+}
+.task {
+    position: relative;
+    margin: 5px,5px;
+    background-image: url(/img/notebg.png);
+    padding: 30px 20px;
+    width: 120px;
+    height: 150px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+.task:hover .btn{
+    display: block;
+}
+
+.fade{
+    animation: fadeIn 2s ;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.btn{
+    display: none;
+    background-image: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 3px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#taskList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
